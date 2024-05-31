@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <nav class="nav">
+                <a href="#" class="logo" id="logo-menu"><img src="./images/logo.png" class="logo"></a>
+                <div class="menu-hamburguesa" id="hamburguesa"><i class='bx bx-menu'></i></div>
+                <ul class="nav-menu" id="contenedor-menu">
+                    <div class="boton-cerrar-menu" id="cerrar-menu"><i class='bx bx-chevrons-right'></i></div>
+                    <li><a href="#" class="nav-menu-item">Perfil</a></li>
+                    <li><a href="#portfolio" class="nav-menu-item">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-menu-item">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="card">
+                <div class="card-face card-front">
+                    <h1>Soy Mateo, Programador web Full-Stack Java y JavaScript</h1>
+                </div>
+                <div class="card-face card-back">
+                    <h2>Sobre Mí</h2>
+                    <p>
+                        Soy un Programador web Full Stack con conocimiento en Java, JavaScript, HTML, CSS y MySQL.
+                        Desempeño eficazmente las funciones asignadas, trabajo fácilmente en equipo, me adapto con rapidez.
+                        Ofrezco habilidades como la capacidad de análisis, la innovación y el alto sentido de responsabilidad.
+                    </p>
+                    <a href="./Hja de vida ATS - Mateo Castro.pdf" class="download-btn" download>Descargar Hoja de Vida</a>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Proyectos Académicos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1, incluyendo las herramientas y tecnologías utilizadas.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2, incluyendo las herramientas y tecnologías utilizadas.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mateo Castro. Todos los derechos reservados.</p>
+    </footer>
+    <script src="menu-hamburguesa.js"></script>
+</body>
+</html>

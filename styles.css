@@ -103,6 +103,7 @@ main {
 .nav-menu {
     display: none;
     place-content: center;
+    flex-direction: column;
     gap: var(--padding-20);
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8); /* Fondo transparente */
@@ -124,7 +125,7 @@ main {
     font-size: 21px;
     font-weight: bold;
     color: var(--color-text);
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
     border-radius: var(--padding);
     padding: var(--padding);
 }
@@ -204,7 +205,7 @@ section {
 }
 
 .card-front {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .card-back {
@@ -223,7 +224,7 @@ section {
 }
 
 .download-btn:hover {
-    background: var(--secundario-100);
+    background: var(--primary-color);
 }
 
 #home h1 {
@@ -232,13 +233,13 @@ section {
 }
 
 #home h2 {
-    font-size: 2.5em;
+    font-size: 36px;
     grid-column: 2;
     margin-bottom: 0;
 }
 
 #home p {
-    font-size: 1.2em;
+    font-size: 21px;
     grid-column: 2;
     grid-row: 2;
 }
@@ -247,13 +248,13 @@ section {
     display: inline-block;
     padding: var(--padding) calc(var(--padding) * 2);
     background: var(--bg-color);
-    margin-top: 4vh;
+    margin-top: 2vh;
     color: var(--color-text);
     text-decoration: none;
     border-radius: var(--border-radius);
     transition: background var(--transition-speed);
     grid-column: 2;
-    width: 50%;
+    width: 60%;
 }
 
 .download-btn:hover {
@@ -343,11 +344,14 @@ footer {
 
     #home{
         display: grid;
-        grid-template-columns: 0.3fr 0.7fr;
-        grid-template-rows: 0.2fr 0.6fr 0.2fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.7fr 0.1fr;
         justify-content: center;
         align-items: center;
-        grid-gap: 5px;
+    }
+
+    .card {
+        grid-row: 1/4;
     }
 }
 
@@ -368,12 +372,22 @@ footer {
         font-size: 3em;
     }
 
+    #home {
+        margin: 5vh 0 ;
+        border-radius: var(--border-radius);
+        perspective: 1000px;
+    }
+
+    .boton-cerrar-menu{
+        display: none;
+    }
+
     #home p {
-        font-size: 1.5em;
+        font-size: 28px;
     }
 
     .download-btn {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     section {
@@ -382,10 +396,6 @@ footer {
 
     h2 {
         font-size: 2em;
-    }
-
-    form {
-        width: 40%;
     }
 
     form button {
